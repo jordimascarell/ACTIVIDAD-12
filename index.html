@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --width-columna: 10vw;
+            --margen: 1vw;
+            --font-size: 3.5vw;
+        }
+
+        body {
+            background-color: black;
+            overflow-x: hidden;
+        }
+
+        .inter-headers {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+            font-size: var(--font-size);
+            text-transform: uppercase;
+            letter-spacing: -0.05em;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        .columna {
+            position: relative;
+            flex: 1;
+            height: 100%;
+        }
+
+        .columna-negra { background-color: black; }
+        .columna-roja { background-color: red; }
+
+        .columna-negra > div { background-color: red; }
+        .columna-roja > div { background-color: black; }
+
+        .columna-negra .inter-headers { color: black; }
+        .columna-roja .inter-headers { color: red; }
+
+        .columna-arriba {
+            position: absolute;
+            top: var(--margen);
+            left: var(--margen);
+            right: var(--margen);
+            height: calc(var(--width-columna) - (var(--margen) * 2));
+            border-radius: 50%;
+        }
+
+        .columna-abajo {
+            position: absolute;
+            bottom: var(--margen);
+            left: var(--margen);
+            right: var(--margen);
+            height: calc(var(--width-columna) - (var(--margen) * 2));
+            border-radius: 50%;
+        }
+
+        .círculo {
+            position: absolute;
+            top: calc(var(--width-columna) + var(--margen));
+            bottom: calc(var(--width-columna) + var(--margen));
+            left: var(--margen);
+            right: var(--margen);
+            border-radius: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="columna columna-negra">
+            <div class="columna-arriba"></div>
+            <div class="círculo">
+                <a href="https://jordimascarell.github.io/ACTIVIDAD-1/"><h2 class="inter-headers">P1</h2></a>
+            </div>
+            <div class="columna-abajo"></div>
+        </div>
+        <div class="columna columna-roja">
+            <div class="columna-arriba"></div>
+            <div class="círculo">
+                <a href="https://jordimascarell.github.io/ACTIVIDAD-2/"><h2 class="inter-headers">P2</h2></a>
+            </div>
+            <div class="columna-abajo"></div>
+        </div>
+        <div class="columna columna-negra">
+            <div class="columna-arriba"></div>
+            <div class="círculo">
+                <a href="https://jordimascarell.github.io/ACTIVIDAD-3/"><h2 class="inter-headers">P3</h2></a>
+            </div>
+            <div class="columna-abajo"></div>
+        </div>
+        <div class="columna columna-roja">
+            <div class="columna-arriba"></div>
+            <div class="círculo">
+                <a href="https://jordimascarell.github.io/ACTIVIDAD-4/"><h2 class="inter-headers">P4</h2></a>
+            </div>
+            <div class="columna-abajo"></div>
+        </div>
+        <div class="columna columna-negra">
+            <div class="columna-arriba"></div>
+            <div class="círculo">
+                <a href="https://jordimascarell.github.io/ACTIVIDAD-5_2/"><h2 class="inter-headers">P5</h2></a>
+            </div>
+            <div class="columna-abajo"></div>
+        </div>
+        <div class="columna columna-roja">
+            <div class="columna-arriba"></div>
+            <div class="círculo">
+                <a href="https://jordimascarell.github.io/ACTIVIDAD-6/"><h2 class="inter-headers">P6</h2></a>
+            </div>
+            <div class="columna-abajo"></div>
+        </div>
+        <div class="columna columna-negra">
+            <div class="columna-arriba"></div>
+            <div class="círculo">
+                <a href="https://www.figma.com/design/6W8s0GEcYALBqj8zIIKV20/ACTIVIDAD-7?node-id=0-1&t=GSmCde2inpArvzgf-1"><h2 class="inter-headers">P7</h2></a>
+            </div>
+            <div class="columna-abajo"></div>
+        </div>
+        <div class="columna columna-roja">
+            <div class="columna-arriba"></div>
+            <div class="círculo">
+                <a href="processing.jpeg"><h2 class="inter-headers">P8</h2></a>
+            </div>
+            <div class="columna-abajo"></div>
+        </div>
+        <div class="columna columna-negra">
+            <div class="columna-arriba"></div>
+            <div class="círculo">
+                <a href="https://jordimascarell.github.io/ACTIVIDAD-9/"><h2 class="inter-headers">P9</h2></a>
+            </div>
+            <div class="columna-abajo"></div>
+        </div>
+        <div class="columna columna-roja">
+            <div class="columna-arriba"></div>
+            <div class="círculo">
+                <a href="https://www.figma.com/design/C9mu39LZeo5buvGc9glzyP/formageda?node-id=1-2&t=PrH0aIFH2ADuUOyy-1"><h2 class="inter-headers">P10</h2></a>
+            </div>
+            <div class="columna-abajo"></div>
+        </div>
+
+    </div>
+</body>
+</html>
